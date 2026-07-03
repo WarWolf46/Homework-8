@@ -32,31 +32,32 @@ public class Main {
         System.out.println();
 
         // Задача 3
-
+        StringBuilder reversedFirst = new StringBuilder();
         for (int i = firstArray.length - 1; i >= 0; i--) {
-            System.out.print(firstArray[i]);
+            reversedFirst.append(firstArray[i]);
             if (i > 0) {
-                System.out.print(", ");
+                reversedFirst.append(", ");
             }
         }
-        System.out.println();
+        System.out.println(reversedFirst.toString());
 
+        StringBuilder reversedSecond = new StringBuilder();
         for (int i = secondArray.length - 1; i >= 0; i--) {
-            System.out.print(secondArray[i]);
+            reversedSecond.append(secondArray[i]);
             if (i > 0) {
-                System.out.print(", ");
+                reversedSecond.append(", ");
             }
         }
-        System.out.println();
+        System.out.println(reversedSecond.toString());
 
+        StringBuilder reversedThird = new StringBuilder();
         for (int i = thirdArray.length - 1; i >= 0; i--) {
-            System.out.print(thirdArray[i]);
+            reversedThird.append(thirdArray[i]);
             if (i > 0) {
-                System.out.print(", ");
+                reversedThird.append(", ");
             }
         }
-        System.out.println();
-
+        System.out.println(reversedThird.toString());
         // Задача 4
 
         for (int i = 0; i < firstArray.length; i++) {
